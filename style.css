@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(114, 108, 108)
+}
+
+.counter-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.number-container {
+    width: 200px;
+    height: 125px;
+    text-align: center;
+}
+
+.number {
+    color: rgb(78, 7, 7);
+    font-weight: 100;
+    margin-top: 0px;
+    font-size: 100px;
+    font-family: Courier, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btn-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Cambria Math', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(128, 15, 15, 0.1);
+    border: rgb(49, 49, 49) 2px solid;
+    -webkit-box-shadow: 2px 3px 3px 0px rgba(115,50,50,1);
+    -moz-box-shadow: 2px 3px 3px 0px rgba(115,50,50,1);
+    box-shadow: 2px 3px 3px 0px rgba(115,50,50,1);
+}
+@keyframes spin{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+.btn:hover{
+    background-color: rgba(248, 2, 2, 0.1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-animation:spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite;
+    animation:spin 3s linear infinite;
+
+}
+ #add-toast{
+    visibility: hidden; 
+    position: fixed;
+    bottom: 50px;
+    right: 2%;
+    font-family: Courier, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    height: 55px;
+    width: 370px;
+    border: none;
+    background-color: rgba(34, 66, 17, 0.65);
+    color: black;
+    text-align: center;
+    padding-top: 27px;
+    border-radius: 5px;
+}
+#sub-toast{
+    visibility: hidden;
+    position: fixed;
+    bottom: 50px;
+    right: 2%;
+    font-family: Courier, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    height: 55px;
+    width: 370px;
+    border: none;
+    background-color: rgba(49, 7, 7, 0.65);
+    color: black;
+    text-align: center;
+    padding-top: 27px;
+    border-radius: 5px;
+}
+
+.display{
+visibility: visible;
+-moz-animation: fadein 0.5s fadeout 0.5s 2.5s;
+-webkit-animation: fadein 0.5s fadeout 0.5s 2.5s;
+animation: fadein 0.5s fadeout 0.5s 2.5s; 
+}
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+} 
