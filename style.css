@@ -47,6 +47,12 @@ body {
     -moz-box-shadow: 2px 3px 3px 0px rgba(115,50,50,1);
     box-shadow: 2px 3px 3px 0px rgba(115,50,50,1);
 }
+.add-btn:active:hover{
+   background-color:  rgba(35, 80, 24, 0.5);
+}
+.sub-btn:active:hover{
+    background-color: rgba(71, 22, 16, 0.5);
+}
 @keyframes spin{
     from {transform: rotate(0deg)}
     to {transform: rotate(360deg)}
@@ -61,60 +67,3 @@ body {
     animation:spin 3s linear infinite;
 
 }
- #add-toast{
-    visibility: hidden; 
-    position: fixed;
-    bottom: 50px;
-    right: 2%;
-    font-family: Courier, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    height: 55px;
-    width: 370px;
-    border: none;
-    background-color: rgba(34, 66, 17, 0.65);
-    color: black;
-    text-align: center;
-    padding-top: 27px;
-    border-radius: 5px;
-}
-#sub-toast{
-    visibility: hidden;
-    position: fixed;
-    bottom: 50px;
-    right: 2%;
-    font-family: Courier, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    height: 55px;
-    width: 370px;
-    border: none;
-    background-color: rgba(49, 7, 7, 0.65);
-    color: black;
-    text-align: center;
-    padding-top: 27px;
-    border-radius: 5px;
-}
-
-.display{
-visibility: visible;
--moz-animation: fadein 0.5s fadeout 0.5s 2.5s;
--webkit-animation: fadein 0.5s fadeout 0.5s 2.5s;
-animation: fadein 0.5s fadeout 0.5s 2.5s; 
-}
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
-    to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
-    to {bottom: 0; opacity: 0;}
-}
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-} 
